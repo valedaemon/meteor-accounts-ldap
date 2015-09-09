@@ -1,8 +1,8 @@
 Package.describe({
-  name : 'babrahams:accounts-ldap',
+  name : 'valedaemon:accounts-ldap',
   summary: 'Meteor account login via LDAP',
   version: '0.3.3',
-  git : 'https://github.com/JackAdams/meteor-accounts-ldap',
+  git : 'https://github.com/valedaemon/meteor-accounts-ldap',
   documentation: 'README.md'
 });
 
