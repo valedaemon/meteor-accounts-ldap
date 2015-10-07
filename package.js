@@ -1,5 +1,5 @@
 Package.describe({
-  name : 'valedaemon:accounts-ldap',
+  name : 'valedaemon:accounts-ldap-bootstrap',
   summary: 'Meteor account login via LDAP',
   version: '0.3.3',
   git : 'https://github.com/valedaemon/meteor-accounts-ldap',

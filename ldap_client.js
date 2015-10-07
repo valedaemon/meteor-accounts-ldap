@@ -12,6 +12,9 @@ LDAP.customFormTemplate = customFormTemplate;
 LDAP.formHelpers = {
   failedLogin : function () {
     return !firstAttempt.get(); //return true if more than one attempt has been made. Show Error Message
+  },
+  usernameText: function () {
+    return Meteor.settings.public.username || "Username or email";
   }
 };
 
@@ -55,6 +58,9 @@ Template.ldapLoginButtons.helpers({
   },
   usernameOrEmail : function () {
 	return LDAP.username() || this.username || (this.emails && this.emails[0] && this.emails[0].address) || 'Authenticated user';
+  },
+  usernameText: function () {
+    return Meteor.settings.public.username || "Username or email";
   }
 });
 
