@@ -14,11 +14,11 @@ Package.on_use(function (api) {
   api.use(['accounts-base', 'underscore'], ['client', 'server']);
   api.use('accounts-password', 'server');
   api.imply('accounts-base', ['client', 'server']);
-  api.use(['ui', 'templating', 'jquery', 'spacebars', 'reactive-var', 'less'], 'client');
+  api.use(['ui', 'templating', 'jquery', 'spacebars', 'reactive-var'], 'client');
   api.add_files([
     'ldap_client.html',
     'ldap_client.js',
-    'ldap_client.less'], 'client');
+    'ldap_client.css'], 'client');
   api.add_files('ldap_server.js', 'server');
   api.export('LDAP');
 });
